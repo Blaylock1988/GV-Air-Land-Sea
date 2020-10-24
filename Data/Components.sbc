@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Components>
+		<Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>TurboEncabulator</SubtypeId>
+            </Id>
+            <DisplayName>Turbo Encabulator</DisplayName>
+            <Icon>Textures\GUI\Icons\component\gravity_generator_components_component.dds</Icon>
+            <Size>
+                <X>0.5</X>
+                <Y>0.3</Y>
+                <Z>0.3</Z>
+            </Size>
+            <Mass>500</Mass>
+            <Volume>40</Volume>
+            <Model>Models\Components\computer_component.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>100</MaxIntegrity>
+            <DropProbability>0.3</DropProbability>
+            <Health>40</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>20</MaximumOfferAmount>
+            <MinimumOrderAmount>50</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>false</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>120</MaximumAcquisitionAmount>
+        </Component>
+		<Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>AIMatrix</SubtypeId>
+            </Id>
+            <DisplayName>AI Matrix</DisplayName>
+            <Icon>Textures\GUI\Icons\component\computer_component.dds</Icon>
+            <Size>
+                <X>0.5</X>
+                <Y>0.3</Y>
+                <Z>0.3</Z>
+            </Size>
+            <Mass>10</Mass>
+            <Volume>10</Volume>
+            <Model>Models\Components\computer_component.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>50</MaxIntegrity>
+            <DropProbability>0.3</DropProbability>
+            <Health>14</Health>
+            <MinimumOfferAmount>1</MinimumOfferAmount>
+            <MaximumOfferAmount>5</MaximumOfferAmount>
+            <MinimumOrderAmount>5</MinimumOrderAmount>
+            <MaximumOrderAmount>10</MaximumOrderAmount>
+            <CanPlayerOrder>false</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>120</MaximumAcquisitionAmount>
+        </Component>
+    </Components>
+</Definitions>
