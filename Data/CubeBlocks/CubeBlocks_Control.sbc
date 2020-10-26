@@ -79,11 +79,11 @@
       <Model>Models\Cubes\Large\gyroscope.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="500" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Construction" Count="40" />
         <Component Subtype="LargeTube" Count="4" />
         <Component Subtype="MetalGrid" Count="50" />
         <Component Subtype="Motor" Count="4" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Computer" Count="5" />
         <Component Subtype="SteelPlate" Count="100" />
       </Components>
@@ -131,10 +131,10 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="15" />
+		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Construction" Count="5" />
         <Component Subtype="LargeTube" Count="1" />
         <Component Subtype="Motor" Count="2" />
-		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Computer" Count="3" />
         <Component Subtype="SteelPlate" Count="10" />
       </Components>

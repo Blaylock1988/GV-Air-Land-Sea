@@ -124,10 +124,10 @@
       <Model>Models\Cubes\Large\VirtualMassBlock.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Superconductor" Count="20" />
         <Component Subtype="Construction" Count="30" />
         <Component Subtype="Computer" Count="20" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="GravityGenerator" Count="9" />
         <Component Subtype="SteelPlate" Count="60" />
       </Components>
@@ -176,10 +176,10 @@
       <Model>Models\Cubes\Small\VirtualMassBlock.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="1" />
+		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Superconductor" Count="2" />
         <Component Subtype="Construction" Count="2" />
         <Component Subtype="Computer" Count="2" />
-		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="GravityGenerator" Count="1" />
         <Component Subtype="SteelPlate" Count="2" />
       </Components>
@@ -219,9 +219,9 @@
       <Model>Models\Cubes\Large\SpaceBallBlock.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="90" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Construction" Count="30" />
         <Component Subtype="Computer" Count="20" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="GravityGenerator" Count="3" />
         <Component Subtype="SteelPlate" Count="135" />
       </Components>
@@ -267,9 +267,9 @@
       <Model>Models\Cubes\Small\SpaceBallBlock.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="50" />
+		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Construction" Count="10" />
         <Component Subtype="Computer" Count="7" />
-		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="GravityGenerator" Count="1" />
         <Component Subtype="SteelPlate" Count="20" />
       </Components>

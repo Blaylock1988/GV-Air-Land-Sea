@@ -416,9 +416,9 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="100" />
+		<Component Subtype="TurboEncabulator" Count="25" />
         <Component Subtype="Construction" Count="150" />
         <Component Subtype="MetalGrid" Count="250" />
-		<Component Subtype="TurboEncabulator" Count="25" />
         <Component Subtype="LargeTube" Count="40" />
         <Component Subtype="Construction" Count="30" />
         <Component Subtype="SteelPlate" Count="50" />
@@ -519,9 +519,9 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="15" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Construction" Count="40" />
         <Component Subtype="MetalGrid" Count="40" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="LargeTube" Count="8" />
         <Component Subtype="Construction" Count="20" />
         <Component Subtype="SteelPlate" Count="10" />
@@ -619,9 +619,9 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="20" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Construction" Count="20" />
         <Component Subtype="MetalGrid" Count="22" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="LargeTube" Count="10" />
         <Component Subtype="Construction" Count="10" />
         <Component Subtype="SteelPlate" Count="10" />
@@ -721,9 +721,9 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="2" />
+		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Construction" Count="10" />
         <Component Subtype="MetalGrid" Count="4" />
-		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="LargeTube" Count="2" />
         <Component Subtype="Construction" Count="5" />
         <Component Subtype="SteelPlate" Count="5" />
@@ -823,10 +823,10 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="100" />
+		<Component Subtype="TurboEncabulator" Count="25" />
         <Component Subtype="Construction" Count="40" />
         <Component Subtype="LargeTube" Count="50" />
         <Component Subtype="MetalGrid" Count="40" />
-		<Component Subtype="TurboEncabulator" Count="25" />
         <Component Subtype="Motor" Count="1100" />
         <Component Subtype="Construction" Count="20" />
         <Component Subtype="SteelPlate" Count="130" />
@@ -931,10 +931,10 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="15" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Construction" Count="30" />
         <Component Subtype="LargeTube" Count="8" />
         <Component Subtype="MetalGrid" Count="10" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Motor" Count="110" />
         <Component Subtype="Construction" Count="20" />
         <Component Subtype="SteelPlate" Count="20" />
@@ -1039,10 +1039,10 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Construction" Count="20" />
         <Component Subtype="LargeTube" Count="4" />
         <Component Subtype="MetalGrid" Count="8" />
-		<Component Subtype="TurboEncabulator" Count="5" />
         <Component Subtype="Motor" Count="90" />
         <Component Subtype="Construction" Count="10" />
         <Component Subtype="SteelPlate" Count="10" />
@@ -1148,10 +1148,10 @@
       <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
       <Components>
         <Component Subtype="SteelPlate" Count="2" />
+		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Construction" Count="20" />
         <Component Subtype="LargeTube" Count="1" />
         <Component Subtype="MetalGrid" Count="1" />
-		<Component Subtype="TurboEncabulator" Count="1" />
         <Component Subtype="Motor" Count="18" />
         <Component Subtype="Construction" Count="2" />
         <Component Subtype="SteelPlate" Count="1" />

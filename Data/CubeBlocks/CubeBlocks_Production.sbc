@@ -16,11 +16,11 @@
             <Model>Models\Cubes\Large\Refinery.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="1100" />
+				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Construction" Count="40" />
                 <Component Subtype="LargeTube" Count="20" />
                 <Component Subtype="Motor" Count="16" />
                 <Component Subtype="MetalGrid" Count="20" />
-				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Computer" Count="20" />
                 <Component Subtype="SteelPlate" Count="100" />
             </Components>
@@ -292,11 +292,11 @@
             <Model>Models\Cubes\Large\Assembler.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="120" />
+				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Construction" Count="80" />
                 <Component Subtype="Motor" Count="20" />
                 <Component Subtype="Display" Count="10" />
                 <Component Subtype="MetalGrid" Count="10" />
-				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Computer" Count="160" />
                 <Component Subtype="SteelPlate" Count="20" />
             </Components>
@@ -365,10 +365,10 @@
             <Model>Models\Cubes\Large\UpgradeProductivity.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="80" />
+				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Construction" Count="40" />
                 <Component Subtype="SmallTube" Count="20" />
                 <Component Subtype="Computer" Count="60" />
-				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Motor" Count="4" />
                 <Component Subtype="SteelPlate" Count="20" />
             </Components>
@@ -422,10 +422,10 @@
             <Model>Models\Cubes\Large\UpgradeEffectiveness.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="80" />
+				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Construction" Count="50" />
                 <Component Subtype="SmallTube" Count="15" />
                 <Component Subtype="Superconductor" Count="20" />
-				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Motor" Count="4" />
                 <Component Subtype="SteelPlate" Count="20" />
             </Components>
@@ -479,10 +479,10 @@
             <Model>Models\Cubes\Large\UpgradeEnergy.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="80" />
+				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Construction" Count="40" />
                 <Component Subtype="SmallTube" Count="20" />
                 <Component Subtype="PowerCell" Count="20" />
-				<Component Subtype="TurboEncabulator" Count="5" />
                 <Component Subtype="Motor" Count="4" />
                 <Component Subtype="SteelPlate" Count="20" />
             </Components>
