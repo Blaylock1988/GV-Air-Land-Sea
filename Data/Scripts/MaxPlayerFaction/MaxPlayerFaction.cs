@@ -1,5 +1,7 @@
 ﻿using Sandbox.ModAPI;
 using VRage.Game;
+using Sandbox.Game;
+using VRageMath;
 using VRage.Game.Components;
 using VRage.Game.ModAPI;
 
@@ -25,6 +27,7 @@ namespace Klime.MaxPlayerFaction
                     if (MyAPIGateway.Session.Factions.TryGetPlayerFaction(arg4) == faction)
                     {
                         MyAPIGateway.Session.Factions.KickMember(arg2,arg4);
+						MyVisualScriptLogicProvider.SendChatMessageColored("This Faction is full (10 Max)", Color.Green, "Server", arg4, "Green");
                     }
                 }
             }
