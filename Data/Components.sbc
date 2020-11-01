@@ -13,11 +13,11 @@
                 <Y>0.3</Y>
                 <Z>0.3</Z>
             </Size>
-            <Mass>500</Mass>
+            <Mass>15</Mass>
             <Volume>40</Volume>
             <Model>Models\Components\computer_component.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MaxIntegrity>100</MaxIntegrity>
+            <MaxIntegrity>200</MaxIntegrity>
             <DropProbability>0.3</DropProbability>
             <Health>40</Health>
             <MinimumOfferAmount>10</MinimumOfferAmount>
@@ -41,7 +41,7 @@
                 <Y>0.3</Y>
                 <Z>0.3</Z>
             </Size>
-            <Mass>10</Mass>
+            <Mass>5</Mass>
             <Volume>10</Volume>
             <Model>Models\Components\computer_component.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
