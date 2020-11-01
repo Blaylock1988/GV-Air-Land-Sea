@@ -21,8 +21,8 @@ namespace Klime.PlanePropThrustNerf
                 MyThrustDefinition thruster = def as MyThrustDefinition;
                 if (thruster != null && thruster.Id.SubtypeName.ToLower().Contains("blade"))
                 {
-                    thruster.ForceMagnitude *= 0.5f;
-                    thruster.MaxPowerConsumption *= 0.5f;
+                    thruster.ForceMagnitude *= 1f;
+                    thruster.MaxPowerConsumption *= 1f;
                 }
             }
         }
