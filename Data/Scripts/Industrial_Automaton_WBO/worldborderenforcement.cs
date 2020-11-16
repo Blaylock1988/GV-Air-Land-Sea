@@ -17,7 +17,7 @@ namespace IndustrialAutomaton.WorldBorderEnforcement
     public class WorldBorderEnforcementBase : MySessionComponentBase
     {
 
-		public static int maxRange = 45;
+		public static int maxRange = 200;
 		// Above is the variable to modify, just change the value to your choice in kilometres.
 		
 		public static int maxTime = 30;
