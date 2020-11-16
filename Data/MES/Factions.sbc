@@ -4,7 +4,7 @@
 	<!--Do Not Edit Above Here-->
 
 		<!--Copy From This Line-->
-		<Faction Tag="GRDNS" Founder="The Guardians">
+		<Faction Tag="GRDS" Founder="The Guardians">
 			<Id>
 				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
 				<SubtypeId>(NPC-ALS) Guardians Faction</SubtypeId> <!--Must Be Unique-->

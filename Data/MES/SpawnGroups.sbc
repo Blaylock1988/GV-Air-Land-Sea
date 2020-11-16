@@ -15,16 +15,9 @@
 			[Modular Encounters SpawnGroup]
 			
 			[RivalAiAtmosphericSpawn:true]
-			
-			[BossEncounterAtmo:false]
-			[BossEncounterChance:100]
-			[BossCustomAnnounceEnable:true]
-			[BossCustomAnnounceAuthor:Unknown Source]
-			[BossCustomAnnounceMessage:Unknown Signal Detected]
-			[BossCustomGPSLabel:Unknown Signal]
-			
+						
 			[UniqueEncounter:true]
-			[FactionOwner:GUARDIANS]
+			[FactionOwner:GRDS]
 			[ReplenishSystems:true]
 			
 			[UseRivalAi:false]
@@ -36,7 +29,7 @@
 			[GridsAreEditable:false]
 			
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Unknown Signal NatoLetter-RandomNumberRandomNumber]
+			[RandomGridNamePattern: Small Cargo Drop RandomNumberRandomNumber-NatoLetter]
 			[ReplaceAntennaNameWithRandomizedName:Special Content Power]
 			
 			[SpawnRandomCargo:true]
