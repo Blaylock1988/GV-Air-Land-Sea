@@ -4,7 +4,7 @@
         <ContainerType CountMin="2" CountMax="4">
             <Id>
                 <TypeId>ContainerTypeDefinition</TypeId>
-                <SubtypeId>PersonalContainerSmall</SubtypeId>
+                <SubtypeId>CargoDropPalletSmall</SubtypeId>
             </Id>
             <Items>
                 <Item AmountMin="100" AmountMax="5000">
