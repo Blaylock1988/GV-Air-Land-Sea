@@ -1,0 +1,33 @@
+#The distance that the sound will start to get quieter
+CloseDropoff = 100
+
+#The point at which the sound is silent (too close)
+ZeroSound = 50
+
+#The distance when the sound is fully faded away
+MaxDistance = 10000
+
+#The fartherest point at which the sound will still be loudest
+FarDropoff = 2000
+
+#The minimum speed the ship has to move at before it will play any atmospheric effects
+MinVel = 40
+
+#The speed at which the sound playing will be the loudest
+MaxVel = 70
+
+#The speed of sound, lower numbers means it takes longer for sound to travel anywhere
+SpeedOfSound = 343
+
+#The amount of seconds before a postion/velocity state is saved, this is used when calculating sound based on a distance away. Lower numbers means more accuracy, but more ram/cpu required to store the states.
+StateAddRate = 0.2
+
+#The minimum mass the ship must be to play any sound
+MinMass = 1000
+
+#The point at which the ship is so heavy it plays at full volume
+MaxMass = 100000
+
+#Multiplies the current speed of the sound sent to the sound player. Use to increase the doppler effect
+DopplerMultiplier = 10
+
