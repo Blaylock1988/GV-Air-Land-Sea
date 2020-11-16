@@ -5,7 +5,7 @@ using VRageMath;
 using VRage.Game.Components;
 using VRage.Game.ModAPI;
 
-namespace Klime.MaxPlayerFaction
+/* namespace Klime.MaxPlayerFaction
 {
     [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
     public class MaxPlayerFaction : MySessionComponentBase
@@ -39,3 +39,4 @@ namespace Klime.MaxPlayerFaction
         }
     }
 }
+*/
