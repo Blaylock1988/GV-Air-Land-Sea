@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-RE-CargoPlane-Behavior-Start</SubtypeId>
+      </Id>
+      <Description>
+
+	  [RivalAI Behavior]
+	  
+      [BehaviorName:Horsefly]
+	  
+	  [AngleAllowedForForwardThrust:90]
+	  [MaxVelocityAngleForSpeedControl:45]
+	  	  
+	  [UsePlayerDistanceTimer:false]
+	  [UseNoTargetTimer:false]
+	  [NoTargetTimerTrigger:0]
+	  [UseRetreatTimer:true]
+	  [RetreatTimerTrigger:900]
+	  [RetreatDespawnDistance:5000]
+	  	  
+	  [TargetData:ALS-CargoPlane-Target]
+	  	  	  
+	  [AutopilotData:ALS-CargoPlane-Autopilot]
+	
+	  [Triggers:ALS-CargoPlane-Trigger-PlayerNear]
+	  [Triggers:ALS-CargoPlane-Trigger-Timer]
+	  
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Target</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Target]
+      
+      [UseCustomTargeting:true]
+      [Target:Player]
+      
+      [MaxDistance:20000]
+      
+      [MatchAllFilters:Owner]
+      [GetTargetBy:ClosestDistance]
+      
+      [Owners:Player]
+
+      </Description>
+      
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Autopilot</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Autopilot]
+	  
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:400]
+	  [CollisionEvasionResumeDistance:150]
+	  [CollisionEvasionResumeTime:10]
+      
+      [FlyLevelWithGravity:false]
+	  [LevelWithGravityWhenIdle:true]
+	  [RotationMultiplier:0.025]
+	  
+	  [OffsetPlanetMinDistFromTarget:8000]
+	  [OffsetPlanetMaxDistFromTarget:15000]
+	  [OffsetPlanetMinTargetAltitude:500]
+	  [OffsetPlanetMaxTargetAltitude:1000]
+      
+	  [DisableInertiaDampeners:true]
+	  [WaypointTolerance:1000]
+	  [IdealPlanetAltitude:750]
+	  [MinimumPlanetAltitude:500]
+	  [AltitudeTolerance:100]
+	  [IdealMaxSpeed:120]
+	  [MaxSpeedTolerance:10]
+	  [SlowDownOnWaypointApproach:false]
+	  
+	  [AngleAllowedForForwardThrust:180]
+	  [MaxVelocityAngleForSpeedControl:180]
+      
+      </Description>
+    </EntityComponent>
+
+	<!-- Trigger sequence for deploy when Player Near -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Trigger-PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:PlayerNear]
+	  [UseTrigger:true]
+	  [TargetDistance:2000]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  
+	  [Actions:ALS-CargoPlane-Action-PlayerNear]
+      
+      </Description>
+    </EntityComponent>
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Action-PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:ALS-CargoPlane-Chat-PlayerNear]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:ALS-CargoPlane-Spawner-CargoDrop]
+	  
+	  [DisableTriggers:true]
+	  [DisableTriggerNames:ALS-CargoPlane-Trigger-Timer]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Chat-PlayerNear</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:90000]
+      
+      [Author:Cargo Plane]
+      [Color:White]
+      
+      [ChatMessages:Deploying Cargo Drop for {PlayerName} at {GPS}]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:Value]
+	  [GPSLabel:Cargo Drop]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Spawner-CargoDrop</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+	  [SpawningType:CustomSpawn]
+      
+      [StartsReady:true]
+      [SpawnMinCooldown:30]
+      [SpawnMinCooldown:60]
+      [MaxSpawns:1]
+	  [UseRelativeSpawnPosition:true]
+	  [RelativeSpawnOffset:{X:0 Y:-10 Z:20}]
+	  [RelativeSpawnVelocity:{X:0 Y:0 Z:0}]
+	  [IgnoreSafetyChecks:true]
+      
+      [SpawnGroups:(NPC-ALS) Scarce Comp Drop]
+      
+      </Description>
+    </EntityComponent>
+	
+	<!-- Trigger sequence for auto deploy after timer -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Trigger-Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]
+	  [StartsReady:false]
+	  [MinCooldownMs:600000]
+	  [MaxCooldownMs:720000]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  
+	  [Actions:ALS-CargoPlane-Action-Timer]
+      
+      </Description>
+    </EntityComponent>
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Action-Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:ALS-CargoPlane-Chat-Timer]
+	  
+	  [SpawnEncounter:true]
+	  [Spawner:ALS-CargoPlane-Spawner-CargoDrop]
+	  
+	  [DisableTriggers:true]
+	  [DisableTriggerNames:ALS-CargoPlane-Trigger-PlayerNear]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Chat-Timer</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:90000]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:Deploying Cargo Drop at {GPS}]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+	  [SendToAllOnlinePlayers:Value]
+	  [GPSLabel:Cargo Drop]
+
+      </Description>
+    </EntityComponent>
+		
+  </EntityComponents>
+</Definitions>

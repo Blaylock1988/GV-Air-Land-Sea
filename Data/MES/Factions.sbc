@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Factions>
+	<!--Do Not Edit Above Here-->
+
+		<!--Copy From This Line-->
+		<Faction Tag="GRDNS" Founder="The Guardians">
+			<Id>
+				<TypeId>MyObjectBuilder_FactionDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ALS) Guardians Faction</SubtypeId> <!--Must Be Unique-->
+			</Id>
+			<DisplayName>The Guardians</DisplayName>
+			<IsDefault>true</IsDefault>
+			<DefaultRelation>Neutral</DefaultRelation> <!--Enemies, Neutral, Friends-->
+			<AcceptHumans>false</AcceptHumans>
+			<AutoAcceptMember>false</AutoAcceptMember>
+			<StartingBalance>10000000</StartingBalance>
+			<Type>None</Type> <!--None, Miner, Trader, Builder-->
+			<DiscoveredByDefault>false</DiscoveredByDefault>
+			<FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon> <!--Game or Mod Path For Texture File-->
+		</Faction>
+		
+	<!--Do Not Edit Below Here-->
+	</Factions>
+</Definitions>

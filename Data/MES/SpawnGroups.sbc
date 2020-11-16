@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	<!--Do Not Edit Above Here-->
+
+		<!--Scarce Comp Drop Containers-->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ALS) Scarce Comp Drop</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[RivalAiAtmosphericSpawn:true]
+			
+			[BossEncounterAtmo:false]
+			[BossEncounterChance:100]
+			[BossCustomAnnounceEnable:true]
+			[BossCustomAnnounceAuthor:Unknown Source]
+			[BossCustomAnnounceMessage:Unknown Signal Detected]
+			[BossCustomGPSLabel:Unknown Signal]
+			
+			[UniqueEncounter:true]
+			[FactionOwner:GUARDIANS]
+			[ReplenishSystems:true]
+			
+			[UseRivalAi:false]
+			[RivalAiReplaceRemoteControl:false]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:false]
+			[GridsAreEditable:false]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Unknown Signal NatoLetter-RandomNumberRandomNumber]
+			[ReplaceAntennaNameWithRandomizedName:Special Content Power]
+			
+			[SpawnRandomCargo:true]
+			[AssignContainerTypesToAllCargo:CargoDropPalletSmall]			
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="ALS Cargo Drop Pallet">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>0</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>		
+		
+		
+		<!-- C-130 Atmo Cargo Ship -->
+		
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ALS) Cargo Plane</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			
+			[AtmosphericCargoShip:true]
+			[SpaceRandomEncounter:true]
+			[PlanetaryInstallation:true]
+			[InstallationSpawnsOnWaterSurface:true]
+			[ForceStaticGrid:false]
+			
+			[UniqueEncounter:true]
+			[FactionOwner:GUARDIANS]
+			[ReplenishSystems:true]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			[ShiftBlockColorsHue:true]
+			[RandomHueShift:true]
+			[GridsAreDestructable:true]
+			[GridsAreEditable:false]
+			
+			[DisableDampeners:false]
+			
+			[UseRandomNameGenerator:true]
+			[RandomGridNamePattern: Cargo Plane NatoLetter-RandomNumberRandomChar]
+			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
+			
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="ALS C-130">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Behaviour>ALS-RE-CargoPlane-Behavior-Start</Behaviour>
+					<Speed>90</Speed>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>		
+
+	<!--Do Not Edit Below Here-->
+	</SpawnGroups>
+</Definitions>
