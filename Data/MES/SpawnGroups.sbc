@@ -70,7 +70,7 @@
 			[ForceStaticGrid:false]
 			
 			[UniqueEncounter:true]
-			[FactionOwner:GUARDIANS]
+			[FactionOwner:GRDS]
 			[ReplenishSystems:true]
 			
 			[UseRivalAi:true]
