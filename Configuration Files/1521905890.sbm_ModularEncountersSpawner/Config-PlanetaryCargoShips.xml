@@ -8,8 +8,8 @@
   <AreaSize>50000</AreaSize>
   <MaxSpawnAttempts>25</MaxSpawnAttempts>
   <PlayerSurfaceAltitude>6000</PlayerSurfaceAltitude>
-  <MinPathDistanceFromPlayer>10000</MinPathDistanceFromPlayer>
-  <MaxPathDistanceFromPlayer>15000</MaxPathDistanceFromPlayer>
+  <MinPathDistanceFromPlayer>15000</MinPathDistanceFromPlayer>
+  <MaxPathDistanceFromPlayer>20000</MaxPathDistanceFromPlayer>
   <MinSpawnFromGrids>5000</MinSpawnFromGrids>
   <MinAirDensity>0.1</MinAirDensity>
   <MinSpawningAltitude>500</MinSpawningAltitude>
