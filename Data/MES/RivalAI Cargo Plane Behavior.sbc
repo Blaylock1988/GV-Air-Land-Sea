@@ -29,6 +29,9 @@
 	
 	  [Triggers:ALS-CargoPlane-Trigger-PlayerNear]
 	  [Triggers:ALS-CargoPlane-Trigger-Timer]
+	  [Triggers:ALS-CargoPlane-Trigger-Spawn]
+	  [Triggers:ALS-CargoPlane-Trigger-LowSpeed]
+	  [Triggers:ALS-CargoPlane-Trigger-Compromised]
 	  
       </Description>
     </EntityComponent>
@@ -94,6 +97,71 @@
       </Description>
     </EntityComponent>
 
+	<!-- Trigger sequence for message upon spawn -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Trigger-Spawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Timer]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  
+	  [Actions:ALS-CargoPlane-Action-Spawn]
+      
+      </Description>
+    </EntityComponent>
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Action-Spawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:ALS-CargoPlane-Chat-Spawn]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Chat-Spawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:90000]
+      
+      [Author:Cargo Plane]
+      [Color:White]
+      
+      [ChatMessages:A Cargo Plane has appeared]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:Value]
+
+      </Description>
+    </EntityComponent>
+	
 	<!-- Trigger sequence for deploy when Player Near -->
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
@@ -225,6 +293,8 @@
       <Description>
 
       [RivalAI Action]
+	  
+	  [Chance:50]
       
       [UseChatBroadcast:true]
       [ChatData:ALS-CargoPlane-Chat-Timer]
@@ -234,6 +304,8 @@
 	  
 	  [DisableTriggers:true]
 	  [DisableTriggerNames:ALS-CargoPlane-Trigger-PlayerNear]
+	  
+	  [Retreat:true]
 
       </Description>
     </EntityComponent>
@@ -266,6 +338,172 @@
 
       </Description>
     </EntityComponent>
+	
+	<!-- Trigger sequence when plane speed gets to low because it crashed -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Trigger-LowSpeed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:HasTarget]
+	  [UseTrigger:true]
+	  [StartsReady:false]
+	  [MinCooldownMs:30000]
+	  [MaxCooldownMs:30000]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  
+	  [Conditions:ALS-CargoPlane-Condition-LowSpeed]
+	  
+	  [Actions:ALS-CargoPlane-Action-LowSpeed]
+      
+      </Description>
+    </EntityComponent>
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Condition-LowSpeed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Condition]
+      
+      [UseConditions:true]
+      [MatchAnyCondition:true]
+      
+	  [CheckGridSpeed:true]
+	  [MinGridSpeed:0]
+	  [MaxGridSpeed:10]
+	  
+      </Description>
+    </EntityComponent>
+	  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Action-LowSpeed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [GenerateExplosion:true]
+	  [ExplosionOffsetFromRemote:{X:0 Y:1 Z:7}]
+	  [ExplosionRange:30]
+	  [ExplosionDamage:5000]
+	  [ExplosionIgnoresVoxels:true]
+      
+      [UseChatBroadcast:true]
+      [ChatData:ALS-CargoPlane-Chat-LowSpeed]
+	  	  
+	  [TerminateBehavior:true]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Chat-LowSpeed</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:90000]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:A Cargo Plane has crashed.]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:Value]
+
+      </Description>
+    </EntityComponent>
 		
+	<!-- Trigger sequence when plane RAI Remote is disabled -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Trigger-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+	  [Type:Compromised]
+	  [UseTrigger:true]
+	  [StartsReady:true]
+	  [MaxActions:1]
+	  [ActionExecution:All]
+	  	  
+	  [Actions:ALS-CargoPlane-Action-Compromised]
+      
+      </Description>
+    </EntityComponent>
+      	  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Action-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+	  
+	  [GenerateExplosion:true]
+	  [ExplosionRange:25]
+	  [ExplosionDamage:5000]
+	  [ExplosionIgnoresVoxels:true]
+      
+      [UseChatBroadcast:true]
+      [ChatData:ALS-CargoPlane-Chat-Compromised]
+	  
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ALS-CargoPlane-Chat-Compromised</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	  [IgnoreAntennaRequirement:true]
+	  [IgnoredAntennaRangeOverride:90000]
+      
+      [Author:{GridName}]
+      [Color:White]
+      
+      [ChatMessages:A Cargo Plane has been shot down.]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Notify]
+	  [SendToAllOnlinePlayers:Value]
+
+      </Description>
+    </EntityComponent>
+
   </EntityComponents>
 </Definitions>
