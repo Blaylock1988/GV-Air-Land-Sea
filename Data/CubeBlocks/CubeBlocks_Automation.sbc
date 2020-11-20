@@ -398,11 +398,11 @@
       <Components>
         <Component Subtype="SteelPlate" Count="11" />
         <Component Subtype="TurboEncabulator" Count="5" />
+        <Component Subtype="AIMatrix" Count="1" />
         <Component Subtype="Construction" Count="4" />
         <Component Subtype="LargeTube" Count="2" />
         <Component Subtype="Motor" Count="1" />
         <Component Subtype="Display" Count="1" />
-        <Component Subtype="AIMatrix" Count="1" />
         <Component Subtype="Computer" Count="2" />
         <Component Subtype="SteelPlate" Count="10" />
       </Components>
