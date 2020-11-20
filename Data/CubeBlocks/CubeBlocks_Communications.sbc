@@ -210,6 +210,7 @@
       <Components>
         <Component Subtype="InteriorPlate" Count="5" />
 		<Component Subtype="TurboEncabulator" Count="5" />
+		<Component Subtype="AIMatrix" Count="1" />
         <Component Subtype="Construction" Count="10" />
         <Component Subtype="Motor" Count="1" />
         <Component Subtype="Computer" Count="15" />
@@ -263,6 +264,7 @@
       <Components>
         <Component Subtype="InteriorPlate" Count="1" />
 		<Component Subtype="TurboEncabulator" Count="1" />
+		<Component Subtype="AIMatrix" Count="1" />
         <Component Subtype="Construction" Count="1" />
         <Component Subtype="Motor" Count="1" />
         <Component Subtype="Computer" Count="1" />
