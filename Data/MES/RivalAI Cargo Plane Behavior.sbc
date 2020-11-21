@@ -13,13 +13,13 @@
 	  
       [BehaviorName:Horsefly]
 	  
-	  [AngleAllowedForForwardThrust:90]
-	  [MaxVelocityAngleForSpeedControl:45]
+	  [AngleAllowedForForwardThrust:180]
+	  [MaxVelocityAngleForSpeedControl:180]
 	  	  
 	  [UsePlayerDistanceTimer:false]
 	  [UseRetreatTimer:true]
 	  [RetreatTimerTrigger:900]
-	  [RetreatDespawnDistance:5000]
+	  [RetreatDespawnDistance:6000]
 	  	  
 	  [TargetData:ALS-CargoPlane-Target]
 	  	  	  
@@ -45,8 +45,10 @@
       
       [UseCustomTargeting:true]
       [Target:Player]
-      
-      [MaxDistance:20000]
+      [UseTargetRefresh:true]
+	  [TimeUntilNextRefresh:30]
+	  
+      [MaxDistance:50000]
       
       [MatchAllFilters:Owner]
       [GetTargetBy:ClosestDistance]
@@ -198,6 +200,8 @@
 	  
 	  [DisableTriggers:true]
 	  [DisableTriggerNames:ALS-CargoPlane-Trigger-Timer]
+	  
+	  [Retreat:true]
 
       </Description>
     </EntityComponent>
@@ -438,6 +442,8 @@
       
       [UseChatBroadcast:true]
       [ChatData:ALS-CargoPlane-Chat-Compromised]
+	  
+	  [TerminateBehavior:true]
 	  
       </Description>
     </EntityComponent>
