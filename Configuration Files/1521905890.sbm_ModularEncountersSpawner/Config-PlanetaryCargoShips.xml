@@ -15,11 +15,11 @@
   <MinSpawningAltitude>500</MinSpawningAltitude>
   <MaxSpawningAltitude>1000</MaxSpawningAltitude>
   <MinPathAltitude>300</MinPathAltitude>
-  <MinPathDistance>15000</MinPathDistance>
-  <MaxPathDistance>20000</MaxPathDistance>
+  <MinPathDistance>10000</MinPathDistance>
+  <MaxPathDistance>15000</MaxPathDistance>
   <PathStepCheckDistance>100</PathStepCheckDistance>
   <DespawnDistanceFromEndPath>1</DespawnDistanceFromEndPath>
-  <DespawnDistanceFromPlayer>2000</DespawnDistanceFromPlayer>
+  <DespawnDistanceFromPlayer>40000</DespawnDistanceFromPlayer>
   <DespawnAltitude>5000</DespawnAltitude>
   <UseMinimumSpeed>true</UseMinimumSpeed>
   <MinimumSpeed>70</MinimumSpeed>
