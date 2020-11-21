@@ -5,7 +5,7 @@
   <MinSpawnTime>2400</MinSpawnTime>
   <MaxSpawnTime>3600</MaxSpawnTime>
   <MaxShipsPerArea>1</MaxShipsPerArea>
-  <AreaSize>50000</AreaSize>
+  <AreaSize>80000</AreaSize>
   <MaxSpawnAttempts>25</MaxSpawnAttempts>
   <PlayerSurfaceAltitude>6000</PlayerSurfaceAltitude>
   <MinPathDistanceFromPlayer>15000</MinPathDistanceFromPlayer>
@@ -38,7 +38,7 @@
   <CleanupBlockLimitTrigger>0</CleanupBlockLimitTrigger>
   <CleanupIncludeUnowned>true</CleanupIncludeUnowned>
   <CleanupUnpoweredOverride>false</CleanupUnpoweredOverride>
-  <CleanupUnpoweredDistanceTrigger>25000</CleanupUnpoweredDistanceTrigger>
+  <CleanupUnpoweredDistanceTrigger>100</CleanupUnpoweredDistanceTrigger>
   <CleanupUnpoweredTimerTrigger>900</CleanupUnpoweredTimerTrigger>
   <UseBlockDisable>false</UseBlockDisable>
   <DisableAirVent>false</DisableAirVent>

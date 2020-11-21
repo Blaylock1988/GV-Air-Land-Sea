@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-16"?>
 <ConfigOtherNPCs xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ModVersion>1.099</ModVersion>
-  <DespawnDistanceFromPlayer>1000</DespawnDistanceFromPlayer>
+  <DespawnDistanceFromPlayer>10000</DespawnDistanceFromPlayer>
   <UseCleanupSettings>true</UseCleanupSettings>
   <CleanupUseDistance>true</CleanupUseDistance>
-  <CleanupUseTimer>false</CleanupUseTimer>
+  <CleanupUseTimer>true</CleanupUseTimer>
   <CleanupUseBlockLimit>false</CleanupUseBlockLimit>
   <CleanupDistanceStartsTimer>false</CleanupDistanceStartsTimer>
   <CleanupResetTimerWithinDistance>false</CleanupResetTimerWithinDistance>
-  <CleanupDistanceTrigger>50000</CleanupDistanceTrigger>
-  <CleanupTimerTrigger>1800</CleanupTimerTrigger>
+  <CleanupDistanceTrigger>500</CleanupDistanceTrigger>
+  <CleanupTimerTrigger>10</CleanupTimerTrigger>
   <CleanupBlockLimitTrigger>0</CleanupBlockLimitTrigger>
   <CleanupIncludeUnowned>true</CleanupIncludeUnowned>
-  <CleanupUnpoweredOverride>true</CleanupUnpoweredOverride>
-  <CleanupUnpoweredDistanceTrigger>25000</CleanupUnpoweredDistanceTrigger>
+  <CleanupUnpoweredOverride>false</CleanupUnpoweredOverride>
+  <CleanupUnpoweredDistanceTrigger>100</CleanupUnpoweredDistanceTrigger>
   <CleanupUnpoweredTimerTrigger>900</CleanupUnpoweredTimerTrigger>
   <UseBlockDisable>false</UseBlockDisable>
   <DisableAirVent>false</DisableAirVent>

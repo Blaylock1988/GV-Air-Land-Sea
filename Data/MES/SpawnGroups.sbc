@@ -84,7 +84,7 @@
 			[DisableDampeners:false]
 			
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Cargo Plane NatoLetter-RandomNumberRandomChar]
+			[RandomGridNamePattern: Cargo Plane NatoLetter-RandomNumberRandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			</Description>
