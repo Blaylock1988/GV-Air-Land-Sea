@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
 <ConfigPlanetaryCargoShips xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ModVersion>1.099</ModVersion>
-  <FirstSpawnTime>900</FirstSpawnTime>
+  <FirstSpawnTime>1200</FirstSpawnTime>
   <MinSpawnTime>2400</MinSpawnTime>
   <MaxSpawnTime>3600</MaxSpawnTime>
   <MaxShipsPerArea>1</MaxShipsPerArea>
   <AreaSize>80000</AreaSize>
-  <MaxSpawnAttempts>25</MaxSpawnAttempts>
+  <MaxSpawnAttempts>30</MaxSpawnAttempts>
   <PlayerSurfaceAltitude>6000</PlayerSurfaceAltitude>
   <MinPathDistanceFromPlayer>15000</MinPathDistanceFromPlayer>
   <MaxPathDistanceFromPlayer>20000</MaxPathDistanceFromPlayer>
