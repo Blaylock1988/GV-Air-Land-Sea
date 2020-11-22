@@ -12,8 +12,8 @@
   <MaxPathDistanceFromPlayer>20000</MaxPathDistanceFromPlayer>
   <MinSpawnFromGrids>5000</MinSpawnFromGrids>
   <MinAirDensity>0.1</MinAirDensity>
-  <MinSpawningAltitude>500</MinSpawningAltitude>
-  <MaxSpawningAltitude>1000</MaxSpawningAltitude>
+  <MinSpawningAltitude>1500</MinSpawningAltitude>
+  <MaxSpawningAltitude>2000</MaxSpawningAltitude>
   <MinPathAltitude>300</MinPathAltitude>
   <MinPathDistance>10000</MinPathDistance>
   <MaxPathDistance>15000</MaxPathDistance>
