@@ -7,7 +7,7 @@
                 <SubtypeId>CargoDropPalletSmall</SubtypeId>
             </Id>
             <Items>
-                <Item AmountMin="100" AmountMax="5000">
+                <Item AmountMin="100" AmountMax="1000">
                     <Frequency>0.75</Frequency>
                     <Id>
                         <TypeId>PhysicalObject</TypeId>
@@ -15,8 +15,8 @@
                     </Id>
                 </Item>
 
-                <Item AmountMin="1" AmountMax="1">
-                    <Frequency>0.1</Frequency>
+                <Item AmountMin="0" AmountMax="1">
+                    <Frequency>0.05</Frequency>
                     <Id>
                         <TypeId>Component</TypeId>
                         <SubtypeId>AIMatrix</SubtypeId>
@@ -36,7 +36,7 @@
                         <SubtypeId>AIMatrix</SubtypeId>
                     </Id>
                 </Item>
-                <Item AmountMin="2" AmountMax="5">
+                <Item AmountMin="2" AmountMax="4">
                     <Frequency>0.1</Frequency>
                     <Id>
                         <TypeId>Component</TypeId>
