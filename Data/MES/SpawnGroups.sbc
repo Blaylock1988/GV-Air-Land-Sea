@@ -29,7 +29,7 @@
 			[GridsAreEditable:true]
 			
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Small Cargo Drop NatoLetter-RandomNumberRandomNumber]
+			[RandomGridNamePattern:Small Cargo Drop NatoLetter-RandomNumberRandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:Special Content Power]
 			
 			[SpawnRandomCargo:true]
@@ -84,7 +84,7 @@
 			[DisableDampeners:false]
 			
 			[UseRandomNameGenerator:true]
-			[RandomGridNamePattern: Cargo Plane NatoLetter-RandomNumberRandomNumber]
+			[RandomGridNamePattern:Cargo Plane NatoLetter-RandomNumberRandomNumber]
 			[ReplaceAntennaNameWithRandomizedName:NPC Antenna]
 			
 			</Description>
