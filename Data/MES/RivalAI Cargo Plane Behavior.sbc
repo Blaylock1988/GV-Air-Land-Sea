@@ -23,7 +23,35 @@
 	  	  
 	  [TargetData:ALS-CargoPlane-Target]
 	  	  	  
-	  [AutopilotData:ALS-CargoPlane-Autopilot]
+	  [UseVelocityCollisionEvasion:true]
+	  [CollisionEvasionWaypointDistance:2000]
+	  [CollisionEvasionResumeDistance:1000]
+	  [CollisionFallEvasionWaypointDistance:1000]
+	  [CollisionEvasionResumeTime:20]
+	     
+      [FlyLevelWithGravity:false]
+	  [LevelWithGravityWhenIdle:true]
+	  [RotationMultiplier:0.025]
+	  
+	  [OffsetPlanetMinDistFromTarget:8000]
+	  [OffsetPlanetMaxDistFromTarget:15000]
+	  [OffsetPlanetMinTargetAltitude:250]
+	  [OffsetPlanetMaxTargetAltitude:500]
+	  
+	  [HorseflyWaypointWaitTimeTrigger:0]
+	  [HorseflyWaypointAbandonTimeTrigger:60]
+      
+	  [DisableInertiaDampeners:true]
+	  [WaypointTolerance:1000]
+	  [IdealPlanetAltitude:500]
+	  [MinimumPlanetAltitude:250]
+	  [AltitudeTolerance:50]
+	  [IdealMaxSpeed:120]
+	  [MaxSpeedTolerance:10]
+	  [SlowDownOnWaypointApproach:false]
+	  
+	  [AngleAllowedForForwardThrust:180]
+	  [MaxVelocityAngleForSpeedControl:180]
 	
 	  [Triggers:ALS-CargoPlane-Trigger-PlayerNear]
 	  [Triggers:ALS-CargoPlane-Trigger-Timer]
@@ -69,8 +97,6 @@
 	  [CollisionFallEvasionWaypointDistance:1000]
 	  [CollisionEvasionResumeTime:20]
 	  
-	  
-      
       [FlyLevelWithGravity:false]
 	  [LevelWithGravityWhenIdle:true]
 	  [RotationMultiplier:0.025]
