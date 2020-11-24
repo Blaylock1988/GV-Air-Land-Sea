@@ -10,19 +10,19 @@
   <delaySafeZoneAdd>60</delaySafeZoneAdd>
   <delaySafeZoneRemove>60</delaySafeZoneRemove>
   <omitGridsLessThan>30</omitGridsLessThan>
-  <convertLargeShipstoStations>false</convertLargeShipstoStations>
+  <convertLargeShipstoStations>true</convertLargeShipstoStations>
   <disableTimers>false</disableTimers>
-  <disablePrograms>false</disablePrograms>
-  <disableShipTools>false</disableShipTools>
-  <disableProjections>false</disableProjections>
-  <disableTurretIdle>false</disableTurretIdle>
+  <disablePrograms>true</disablePrograms>
+  <disableShipTools>true</disableShipTools>
+  <disableProjections>true</disableProjections>
+  <disableTurretIdle>true</disableTurretIdle>
   <disableSpotLights>false</disableSpotLights>
   <disableProduction>false</disableProduction>
   <disableProductionOnRestart>false</disableProductionOnRestart>
-  <enableFactionAlerts>false</enableFactionAlerts>
+  <enableFactionAlerts>true</enableFactionAlerts>
   <factionFurtherThan>2000</factionFurtherThan>
   <enemyCloserThan>5000</enemyCloserThan>
-  <enableChatCutPaste>false</enableChatCutPaste>
+  <enableChatCutPaste>true</enableChatCutPaste>
   <cooldownCutPaste>300</cooldownCutPaste>
   <enableChatConvert>true</enableChatConvert>
   <enableChatConvertV2>true</enableChatConvertV2>
