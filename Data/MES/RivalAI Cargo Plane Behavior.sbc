@@ -331,6 +331,7 @@
 	  [Conditions:ALS-CargoPlane-Condition-LowSpeed]
 	  
 	  [Actions:ALS-CargoPlane-Action-LowSpeed]
+	  [Actions:ALS-CargoPlane-Action-Timer]
       
       </Description>
     </EntityComponent>
