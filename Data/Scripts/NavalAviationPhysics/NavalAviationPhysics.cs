@@ -40,10 +40,10 @@ namespace Klime.NavalAviationPhysics
         Vector3 reuse_finalspeed = Vector3.Zero;
         Vector3 reuse_initialspeed = Vector3.Zero;
 
-        float minimum_mass = 10000;
-        float maximum_mass = 30000;
-        float base_speed = 0.6f; //Multiplied by world max
-        float max_additional_speed = 0.4f; //Multiplied by world max
+        float minimum_mass = 1000;
+        float maximum_mass = 1500000;
+        float base_speed = 0.7f; //Multiplied by world max
+        float max_additional_speed = 0.3f; //Multiplied by world max
 
         float max_angular_world = 2;
         float min_angular_world = 0.2f;
