@@ -73,6 +73,10 @@
 			[FactionOwner:GRDS]
 			[ReplenishSystems:true]
 			
+			[UseRemoteControlCodeRestrictions:true]
+			[RemoteControlCode:ALS-CargoPlane-001]
+			[RemoteControlCodeMinDistance:90000]
+			
 			[UseRivalAi:true]
 			[RivalAiReplaceRemoteControl:true]
 
