@@ -15,7 +15,8 @@
 			[Modular Encounters SpawnGroup]
 			
 			[RivalAiAtmosphericSpawn:true]
-						
+			
+			[IgnoreCleanupRules:true]
 			[UniqueEncounter:true]
 			[FactionOwner:Nobody]
 			[ReplenishSystems:true]
@@ -69,6 +70,7 @@
 			[InstallationSpawnsOnWaterSurface:true]
 			[ForceStaticGrid:false]
 			
+			[IgnoreCleanupRules:true]
 			[UniqueEncounter:true]
 			[FactionOwner:GRDS]
 			[ReplenishSystems:true]
