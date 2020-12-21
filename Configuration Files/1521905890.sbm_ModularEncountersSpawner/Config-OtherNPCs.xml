@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
 <ConfigOtherNPCs xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <ModVersion>1.099</ModVersion>
+  <ModVersion>1.106</ModVersion>
   <DespawnDistanceFromPlayer>30000</DespawnDistanceFromPlayer>
-  <UseCleanupSettings>true</UseCleanupSettings>
+  <UseCleanupSettings>flase</UseCleanupSettings>
   <CleanupUseDistance>true</CleanupUseDistance>
   <CleanupUseTimer>true</CleanupUseTimer>
   <CleanupUseBlockLimit>false</CleanupUseBlockLimit>
